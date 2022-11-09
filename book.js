@@ -74,6 +74,9 @@ class Book{
         this.readDate = null
     }
 
+    setNowDate(){
+        this.readDate = Date(Date.now())
+    }
 }
 
 export { BookList, Book };
