@@ -59,6 +59,10 @@ class BookList{
     getBooks(books){
         return this.books
     }
+
+    getTotalBooks(){
+        return this.books.length;
+    }
 }
 
 class Book{
@@ -67,21 +71,9 @@ class Book{
         this.genre = genre
         this.author = author
         this.read = false
-        this.readDate = ''
+        this.readDate = null
     }
 
-    setNowDate(){
-        this.readDate = Date(Date.now())
-    }
 }
-
-// listaLibros = new BookList()
-// libro1 = new Book("El Quijote", "Novela", "Cervantes")
-// libro2 = new Book("La Celestina", "Novela", "Fernando de Rojas")
-// libro3 = new Book("Harry Potter", "Fantasía", "J.K.Rowling")
-
-// listaLibros.addBook(libro1)
-// listaLibros.addBook(libro2)
-// listaLibros.addBook(libro3)
 
 export { BookList, Book };
